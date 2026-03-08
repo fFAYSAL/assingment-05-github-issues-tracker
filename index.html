@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Issues Tracker</title>
+
+    <!-- tailwind css connect -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+     <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
+<link rel="stylesheet" href="style.css">
+
+
+
 <body>
-    hello github
+    <section class="max-w-[456px] mx-auto bg-[#ffffff] p-5 my-[60px] rounded-lg shadow-lg">
+
+        <div class="flex flex-col items-center text-center">
+            
+                <img src="./assets/github-logo.png" alt="" >
+                <h2 class="text-[24px] font-semibold pt-4">GitHub Issues Tracker</h2>
+                <p class="text-[#64748B] mb-4">Sign in to manage your issues</p>
+            
+        </div>
+        <div>
+            <h3 class="text-[#1F2937] text-xl">Username</h3>
+            <input type="text" placeholder="Enter Username" class="border border-gray-300 w-full rounded-md p-3 mt-2 mb-4">
+            <h3 class="text-[#1F2937] text-xl">Password</h3>
+            <input type="text" placeholder="Enter Password" class="border border-gray-300 w-full rounded-md p-3 mt-2 mb-4">
+            <button class="w-full bg-[#4A00FF] font-semibold text-white p-3 rounded-md">Sign In</button>
+        </div>
+
+        <div class="flex items-center my-6">
+    
+           <div class="flex-grow h-px bg-gray-300"></div>
+           <span class="px-3 text-gray-500 text-sm">OR</span>
+           <div class="flex-grow h-px bg-gray-300"></div>
+
+        </div>
+        <p class="text-center text-gray-500 text-sm mb-3">
+          Demo Credentials:
+        </p>
+        <div class="text-center bg-[#c8d7eb2d] p-6 ">
+            
+                <h4 ><strong>Username:</strong> admin</h4>
+                <h4><strong>Username:</strong> admin123</h4>
+        </div>
+    </section>
+
+
 </body>
 </html>
