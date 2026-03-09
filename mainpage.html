@@ -39,7 +39,7 @@
             placeholder="Search issues..." 
             class="pl-10 pr-4 py-2 border border-gray-200 rounded-md w-64 md:w-80 text-sm focus:outline-none focus:ring-1 focus:ring-blue-400 placeholder:text-gray-400">
             
-            <button class="bg-[#4A00FF] p-2 rounded-md text-white"><i class="fa-solid fa-plus"></i>New Issue</button>
+            <button class="bg-[#4A00FF] p-2 rounded-md text-white text-sm cursor-pointer "><i class="fa-solid fa-plus"></i>New Issue</button>
             
 
         </div>
@@ -51,9 +51,9 @@
     <!-- main section -->
      <section class="max-w-7xl mx-auto px-4 sm:6 lg:px-0 ">
         <div class="flex gap-3 bg-[#ffffff] shadow-md mt-15 border border-gray-100 p-6">
-            <button class="px-12 py-2 bg-[#4A00FF] text-white border border-blue-800 rounded-md">All</button>
-            <button class="px-12 py-2 bg-[#4A00FF] text-white border border-blue-800 rounded-md">Open</button>
-            <button class="px-12 py-2 bg-[#4A00FF] text-white border border-blue-800 rounded-md">Closed</button>
+            <button id="all-btn" class="px-12 py-2 bg-[#4A00FF] text-white border border-blue-800 rounded-md cursor-pointer">All</button>
+            <button id="open-btn" class="px-12 py-2 border border-gray-300 rounded-md cursor-pointer">Open</button>
+            <button id="closed-btn" class="px-12 py-2 border border-gray-300 rounded-md cursor-pointer">Closed</button>
         </div>
 
         <div class="mt-4 bg-white shadow-md border border-gray-100 p-6">
@@ -93,7 +93,7 @@
         <div class="card-div my-7 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  gap-5" >
 
             <!-- card no - 01 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -117,7 +117,7 @@
                     
             </div>
             <!-- card no - 02 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FDE68A] px-6 text-[#D97706] py-1 rounded-full text-3">MEDIUM</button>
@@ -141,7 +141,7 @@
                     
             </div>
             <!-- card no - 03 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-purple-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Closed- Status .png" alt="">
                     <button class="bg-[#EEEFF2] px-6 text-[#9CA3AF] py-1 rounded-full text-3">LOW</button>
@@ -165,7 +165,7 @@
                     
             </div>
             <!-- card no - 04 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -189,7 +189,7 @@
                     
             </div>
             <!-- card no - 05 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -213,7 +213,7 @@
                     
             </div>
             <!-- card no - 06 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-purple-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Closed- Status .png" alt="">
                     <button class="bg-[#EEEFF2] px-6 text-[#9CA3AF] py-1 rounded-full text-3">LOW</button>
@@ -237,7 +237,7 @@
                     
             </div>
             <!-- card no - 07 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FDE68A] px-6 text-[#D97706] py-1 rounded-full text-3">MEDIUM</button>
@@ -261,7 +261,7 @@
                     
             </div>
             <!-- card no - 08 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -285,7 +285,7 @@
                     
             </div>
             <!-- card no - 09 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -309,7 +309,7 @@
                     
             </div>
             <!-- card no - 10 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FDE68A] px-6 text-[#D97706] py-1 rounded-full text-3">MEDIUM</button>
@@ -333,7 +333,7 @@
                     
             </div>
             <!-- card no - 11 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-purple-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Closed- Status .png" alt="">
                     <button class="bg-[#EEEFF2] px-6 text-[#9CA3AF] py-1 rounded-full text-3">LOW</button>
@@ -357,7 +357,7 @@
                     
             </div>
             <!-- card no - 12 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -381,7 +381,7 @@
                     
             </div>
             <!-- card no - 13 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -405,7 +405,7 @@
                     
             </div>
             <!-- card no - 14 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FDE68A] px-6 text-[#D97706] py-1 rounded-full text-3">MEDIUM</button>
@@ -429,7 +429,7 @@
                     
             </div>
             <!-- card no - 15 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-purple-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Closed- Status .png" alt="">
                     <button class="bg-[#EEEFF2] px-6 text-[#9CA3AF] py-1 rounded-full text-3">LOW</button>
@@ -453,7 +453,7 @@
                     
             </div>
             <!-- card no - 16 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -477,7 +477,7 @@
                     
             </div>
             <!-- card no - 17 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -501,7 +501,7 @@
                     
             </div>
             <!-- card no - 18 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FDE68A] px-6 text-[#D97706] py-1 rounded-full text-3">MEDIUM</button>
@@ -525,7 +525,7 @@
                     
             </div>
             <!-- card no - 19 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-purple-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Closed- Status .png" alt="">
                     <button class="bg-[#EEEFF2] px-6 text-[#9CA3AF] py-1 rounded-full text-3">LOW</button>
@@ -549,7 +549,7 @@
                     
             </div>
             <!-- card no - 20 -->
-            <div class="border-t-3 rounded-md border-green-500 p-6 shadow-md">
+            <div class="issue-card border-t-3 rounded-md border-green-500 p-6 shadow-md">
                 <div class="flex justify-between items-center mb-3">
                     <img src="./assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] px-6 text-[#EF4444] py-1 rounded-full text-3">HIGH</button>
@@ -580,7 +580,9 @@
 
 
 
-     
+
+     <!-- java script connect -->
+      <script src="mainpage.js"></script>
 
 </body>
 </html>
